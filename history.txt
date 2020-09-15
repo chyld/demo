@@ -1,0 +1,500 @@
+   23  sed 1,9d zillow.csv 
+   24  sed 1,9d zillow.csv | cut -d , -f 1
+   25  sed 1,9d zillow.csv | cut -d , -f 1,3
+   26  sed 1,9d zillow.csv
+   27  vi x.py
+   28  cat x.py 
+   29  sed 1,9d zillow.csv
+   30  sed 1,9d zillow.csv | python x.py 
+   31  sed 1,9d zillow.csv
+   32  sed 1,9d zillow.csv | cut ','
+   33  sed 1,9d zillow.csv | cut -d ',' 
+   34  sed 1,9d zillow.csv | cut -d ',' -f 1
+   35  sed 1,9d zillow.csv | cut -d ',' -f 2
+   36  sed 1,9d zillow.csv | cut -d ',' -f 2 | python x.py 
+   37  vi x.py
+   38  sed 1,9d zillow.csv | cut -d ',' -f 2 | python x.py 
+   39  @vi x.py
+   40  vi x.py
+   41  @vi x.py
+   42  sed 1,9d zillow.csv | cut -d ',' -f 2 | python x.py 
+   43  c
+   44  sed 1,9d zillow.csv | cut -d ',' -f 2 | python x.py 
+   45  cat x.py 
+   46  c
+   47  l
+   48  rm *
+   49  c
+   50  l
+   51  git
+   52  c
+   53  git init
+   54  ls
+   55  l
+   56  touch a b c
+   57  git add .
+   58  g commit -am "ok"
+   59  git commit -am "ok"
+   60  git config --global user.email "chyld.medford@gmail.com"
+   61  git config --global user.name "Chyld Medford"
+   62  git config -l
+   63  git config -l | grep user
+   64  cd
+   65  cat .gitconfig 
+   66  cd Temp
+   67  c
+   68  l
+   69  git log
+   70  git status
+   71  cd
+   72  vi .bash_profile 
+   73  exit
+   74  cd Temp
+   75  l
+   76  g add .
+   77  g commit -m "ok"
+   78  g log
+   79  g log --one-line
+   80  g log --oneline
+   81  c
+   82  l
+   83  explorer.exe 
+   84  pwd
+   85  c
+   86  l
+   87  code .
+   88  clear
+   89  l
+   90  touch d
+   91  g status
+   92  g checkout .
+   93  g s
+   94  g status
+   95  git restore .
+   96  g status
+   97  g reset --hard
+   98  g reset --hard HEAD
+   99  g s
+  100  g status
+  101  g add .
+  102  g commit -am "ddd"
+  103  g log --oneline
+  104  g status
+  105  g reset --hard HEAD
+  106  g reset --hard HEAD~1
+  107  g reflog
+  108  git checkout 
+  109  git checkout 
+  110  git checkout 0d1b89f
+  111  g checkout HEAD
+  112  g checkout master
+  113  git branch sweet 0d1b89f
+  114  g branch
+  115  g checkout sweet
+  116  git branch -av
+  117  g checkout master
+  118  c
+  119  g reflog
+  120  c
+  121  g log
+  122  rm *
+  123  l
+  124  g s
+  125  gs
+  126  g status
+  127  g checkout .
+  128  rm *
+  129  g checkout .
+  130  rm *
+  131  git restore .
+  132  rm b
+  133  g restore b
+  134  rm b
+  135  g restore b
+  136  rm *
+  137  l
+  138  rm -rf .git
+  139  c
+  140  l
+  141  code .
+  142  g init
+  143  l
+  144  touch {a,b,c}.py
+  145  ls
+  146  ls ~
+  147  ls ~ > files.txt
+  148  h
+  149  history
+  150  history > history.txt
+  151  ps
+  152  ps -ef
+  153  ps > procs.txt
+  154  c
+  155  ping google.com
+  156  ping google.com > pings.txt
+  157  ping google.com > pings.txt
+  158  ping google.com
+  159  c
+  160  ping -c 10 google.com
+  161  sudo ping -c 10 google.com
+  162  ping -c 10 google.com
+  163  c
+  164  ping google.com
+  165  ping google.com > pings.txt
+  166  c
+  167  cp ~/Downloads/zillow.csv .
+  168  who
+  169  g add .
+  170  c
+  171  g commit -m "first"
+  172  c
+  173  g status
+  174  g log --oneline
+  175  g log
+  176  rm -rf .git
+  177  c
+  178  l
+  179  c
+  180  ls
+  181  code .
+  182  g add *.py
+  183  g init
+  184  g add *.py
+  185  g commit -m "py files"
+  186  c
+  187  l
+  188  c
+  189  ls
+  190  g status
+  191  g add *.txt
+  192  g commit -m "txt files"
+  193  g status
+  194  g add .
+  195  g commit -m "csv files"
+  196  c
+  197  g log
+  198  c
+  199  g log --oneline
+  200  g branch demo
+  201  g branch
+  202  git branch -av
+  203  g checkout demo
+  204  c
+  205  ls /
+  206  ls / > root_files.txt
+  207  g add .
+  208  g commit -m "root"
+  209  g log
+  210  g checkout master
+  211  c
+  212  g merge demo
+  213  g log --oneline
+  214  g branch onlypy a2946d5
+  215  g checkout onlypy
+  216  git cherry
+  217  git cherry-pick 
+  218  c
+  219  git log
+  220  git log --all
+  221  git log --all --oneline
+  222  cd
+  223  vi .bash_profile 
+  224  exit
+  225  cd Temp
+  226  c
+  227  gl
+  228  git cherry-pick eb564de
+  229  c
+  230  gl
+  231  g status
+  232  g status
+  233  g add .
+  234  g commit -m "mod a.py"
+  235  gl
+  236  g checkout master
+  237  c
+  238  g merge onlypy
+  239  gl
+  240  g checkout a2
+  241  g checkout a294
+  242  gl
+  243  g checkout 2d9a
+  244  g checkout 93a1
+  245  g checkout eb56
+  246  g checkout master
+  247  c
+  248  g status
+  249  g restore a.py 
+  250  g restore .
+  251  gs
+  252  c
+  253  g staus
+  254  g status
+  255  c
+  256  gl
+  257  g revert 2d9a
+  258  g status
+  259  c
+  260  gl
+  261  g reset --hard HEAD~1
+  262  gl
+  263  l
+  264  c
+  265  cd ..
+  266  rm -rf Temp
+  267  mkdir Temp
+  268  cd Temp
+  269  c
+  270  l
+  271  c
+  272  exit
+  273  #bash
+  274  echo $0
+  275  ps
+  276  clear
+  277  ipython
+  278  python
+  279  ps
+  280  echo $X
+  281  exit
+  282  echo $X
+  283  ls
+  284  vi main.py 
+  285  c
+  286  clear
+  287  cat main.py 
+  288  python main.py 
+  289  exit
+  290  ipython
+  291  c
+  292  echo $0
+  293  x=3
+  294  y=2
+  295  echo $x $y
+  296  echo x y
+  297  c
+  298  who
+  299  user
+  300  username
+  301  # fake unix
+  302  # wsl
+  303  claer
+  304  clear
+  305  ls
+  306  cd ..
+  307  cd
+  308  pwd
+  309  cd /
+  310  cd c
+  311  cd Users/
+  312  cd chyld/
+  313  pwd
+  314  claer
+  315  clear
+  316  ls
+  317  clear
+  318  cd Downloads/
+  319  ls
+  320  cd ..
+  321  cd Documents/
+  322  pwd
+  323  ls
+  324  cd ..
+  325  clear
+  326  cd Documents/
+  327  cd ..
+  328  mkdir Galvanize
+  329  cd 
+  330  cd Galvanize/
+  331  ls
+  332  touch hello.txt
+  333  ls
+  334  c
+  335  ls
+  336  rm hello.txt 
+  337  ls
+  338  mkdir w1d1
+  339  cd w1d1/
+  340  pwd
+  341  c
+  342  l
+  343  mkdir unix
+  344  cd unix/
+  345  clear
+  346  ls
+  347  touch hello.txt
+  348  ls
+  349  touch a.py b.py c.py
+  350  touch file-{d,e,f}.py
+  351  ls
+  352  clear
+  353  history
+  354  claer
+  355  clear
+  356  ls
+  357  history
+  358  c
+  359  l
+  360  c
+  361  ls
+  362  touch {1,2,3}.py
+  363  ls
+  364  touch {1..20}.py
+  365  ls
+  366  touch {a..z}.py
+  367  ls
+  368  c
+  369  ls
+  370  rm *
+  371  ls
+  372  history
+  373  c
+  374  l
+  375  touch {1..5}.{txt,py}
+  376  ls
+  377  rm *.txt
+  378  ls
+  379  rm 3*
+  380  ls
+  381  c
+  382  l
+  383  touch {1..5}.{txt,py}
+  384  ls
+  385  cp 1.py 1-copy.py
+  386  ls
+  387  mv 1.py 11.py
+  388  ls
+  389  c
+  390  # cp, mv, rm
+  391  asdfasdfas
+  392  # lol
+  393  ls
+  394  mkdir a b c
+  395  ls
+  396  rm a
+  397  rm -rf a
+  398  ls
+  399  c
+  400  rm -rf a b c
+  401  ls
+  402  # mkdir, rm -rf 
+  403  c
+  404  l
+  405  c
+  406  l
+  407  rm *
+  408  ls
+  409  touch main.py
+  410  ls
+  411  c
+  412  ls
+  413  vi main.py 
+  414  ls
+  415  ls -al
+  416  touch x
+  417  ls -al
+  418  c
+  419  l
+  420  ls -al
+  421  python --version
+  422  python main.py 
+  423  c
+  424  ls
+  425  curl https://people.sc.fsu.edu/~jburkardt/data/csv/zillow.csv
+  426  ls
+  427  curl https://people.sc.fsu.edu/~jburkardt/data/csv/zillow.csv > zillow.csv
+  428  ls
+  429  ls -al
+  430  vi zillow.csv 
+  431  cat zillow.csv 
+  432  head zillow.csv 
+  433  head -n 1zillow.csv 
+  434  head -n 1 zillow.csv 
+  435  head -n 3 zillow.csv 
+  436  tail -n 3 zillow.csv 
+  437  c
+  438  cat zillow.csv 
+  439  c
+  440  cat zillow.csv | grep 3
+  441  c
+  442  cat zillow.csv 
+  443  c
+  444  cat zillow.csv | grep 3200
+  445  l
+  446  rm x
+  447  c
+  448  l
+  449  vi demo.txt
+  450  cat demo.txt 
+  451  c
+  452  cat zillow.csv 
+  453  cat zillow.csv | wc
+  454  cat demo.txt | wc
+  455  cat demo.txt 
+  456  cat demo.txt | sort
+  457  cat demo.txt | sort | uniq
+  458  cat demo.txt | sort | uniq > cool_demo.txt
+  459  cat cool_demo.txt 
+  460  cat demo.txt 
+  461  c
+  462  X=3
+  463  echo $X
+  464  bash
+  465  echo $X
+  466  c
+  467  export X=3
+  468  echo $X
+  469  bash
+  470  exit
+  471  cd
+  472  cd Galvanize/w1d1/unix/
+  473  ls
+  474  python main.py 
+  475  export X=7
+  476  python main.py 
+  477  c
+  478  git --version
+  479  which git
+  480  ls -al /mingw64/bin/git
+  481  ls
+  482  cd ..
+  483  ls
+  484  mkdir git
+  485  ls
+  486  cd git/
+  487  c
+  488  pwd
+  489  ls
+  490  git config --global user.email "chyld.medford@gmail.com"
+  491  git config --global user.name "Chyld Medford"
+  492  git config -l
+  493  c
+  494  git config -l | grep user
+  495  cd ~
+  496  ls -al
+  497  c
+  498  ls -al | grep bash
+  499  cat .bash_profile 
+  500  wget
+  501  ;ld
+  502  ls
+  503  git
+  504  clear
+  505  cd
+  506  pwd
+  507  cd Galvanize/
+  508  cd w1d1/
+  509  ls
+  510  ls
+  511  cd git/
+  512  ls
+  513  clear
+  514  mkdir demo
+  515  cd demo/
+  516  ls
+  517  touch {a,b,c}.py
+  518  ls
+  519  history
+  520  claer
+  521  clear
+  522  history > history.txt
